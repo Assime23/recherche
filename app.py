@@ -12,139 +12,44 @@ st.set_page_config(
     }
 )
 
-# CSS personnalisé pour un look plus professionnel et responsive
+# Basic CSS styling
 st.markdown("""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-    
-    * {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        letter-spacing: -0.011em;
+    html, body, .block-container, .main, .search-container {
+        background: #fff !important;
+        color: #202124 !important;
     }
-    
-    .main {
-        padding: 1rem;
-        color: #202124;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    /* Style du conteneur principal */
     .block-container {
-        max-width: 1000px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        padding-top: 2rem !important;
-    }
-    
-    /* Style de la barre latérale */
-    .sidebar .sidebar-content {
-        max-width: 300px;
+        max-width: 1000px;
         margin: 0 auto;
+        padding: 20px;
     }
     
-    .stTitle {
-        color: #1a73e8;
-        font-size: 2rem !important;
-        padding-bottom: 1rem;
-        font-weight: 600;
-        letter-spacing: -0.02em;
-    }
-    
-    .stSelectbox, .stMultiSelect {
-        background-color: white;
-        margin-bottom: 0.5rem;
-        font-size: 0.95rem;
-    }
     .search-container {
-        background-color: #f8f9fa;
-        padding: 1.5rem;
-        border-radius: 12px;
-        margin: 1rem auto 2rem auto;
-        max-width: 800px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        background: #f8f9fa;
+        padding: 20px;
+        margin: 10px auto;
     }
     
-    .sidebar .block-container {
-        padding: 0.2rem 0.5rem;
-    }
-    
-    /* Style des colonnes */
-    div[data-testid="column"] {
-        padding: 0 0.5rem;
-    }
-    /* Styles responsifs */
-    @media (max-width: 768px) {
-        .main {
-            padding: 0.5rem;
-        }
-        .search-container {
-            padding: 0.75rem;
-        }
-        .stTitle {
-            font-size: 0.5rem !important;
-        }
-    }
-    /* Réduction des espacements */
-    .block-container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    div[data-testid="stVerticalBlock"] > div {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-    .stMarkdown {
-        margin-top: 0.2rem;
-        margin-bottom: 0.2rem;
-    }
-    hr {
-        margin: 0.5rem 0;
-    }
-    /* Style des résultats */
     .result-card {
-        border: 1px solid #dadce0;
-        border-radius: 8px;
-        padding: 1.25rem;
-        margin: 0 auto 1.25rem auto;
-        background-color: #ffffff;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-        transition: box-shadow 0.2s ease;
-        max-width: 850px;
-    }
-    
-    .result-card:hover {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    }
-    
-    .result-card h3 {
-        margin: 0 0 0.75rem 0;
-        font-size: 1.15rem;
-        font-weight: 500;
-        line-height: 1.4;
-        color: #1a73e8;
-    }
-    
-    .result-card h3 a:hover {
-        text-decoration: underline !important;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px 0;
+        background: white;
     }
     
     .result-meta {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 0.7rem;
+        gap: 5px;
+        margin: 10px 0;
     }
     
     .meta-tag {
-        background-color: #f1f3f4;
-        padding: 0.4rem 0.8rem;
-        border-radius: 16px;
-        font-size: 0.875rem;
-        color: #3c4043;
-        font-weight: 500;
-        white-space: nowrap;
-        letter-spacing: 0;
+        background: #f1f3f4;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 14px;
     }
     </style>
 """, unsafe_allow_html=True)
