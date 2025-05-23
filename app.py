@@ -2,7 +2,7 @@ import streamlit as st
 from moteur import rechercher
 from datetime import datetime, timedelta
 
-# Configuration de la page avec un thème plus professionnel
+# Coscscnfiguration de la page avec un thème plus professionnel
 st.set_page_config(
     page_title="KIBAARE | Moteur de Recherche Académique",
     layout="wide",
