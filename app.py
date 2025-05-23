@@ -15,10 +15,6 @@ st.set_page_config(
 # Basic CSS styling
 st.markdown("""
     <style>
-    html, body, .block-container, .main, .search-container {
-        background: #fff !important;
-        color: #202124 !important;
-    }
     .block-container {
         max-width: 1000px;
         margin: 0 auto;
